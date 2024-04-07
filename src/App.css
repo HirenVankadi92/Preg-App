@@ -1,0 +1,24 @@
+.icones {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.icon-img {
+    width: 45px !important;
+    height: 45px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-img img {
+    font-weight: 700;
+}
+
+.button-native {
+    height: auto !important;
+    width: auto;
+}

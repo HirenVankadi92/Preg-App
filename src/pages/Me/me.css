@@ -1,0 +1,97 @@
+.header {
+  background: #0086b3;
+}
+.center {
+  margin: 110px;
+  width: 100%;
+  height: 2rem;
+  margin-top: 10px;
+}
+input.ridge {
+  border-style: ridge;
+  background-color: #90c2d5;
+  margin-bottom: 10px;
+}
+select.ridge {
+  border-style: ridge;
+  background-color: #90c2d5;
+  width: 40%;
+  margin-bottom: 10px;
+}
+div.ex1 {
+  background-color: lightblue;
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  gap: 30px;
+}
+.nensi-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*=======================================
+            Mom's Weight
+=======================================*/
+
+.mom-weight-main {
+  padding: 20px 10px;
+}
+
+.mom-weight {
+  padding: 0 10px;
+}
+
+.weight-mom {
+  display: flex;
+}
+
+.ridge {
+  width: 100%;
+  padding: 7px 10px;
+  font-weight: 600;
+  font-size: 17px;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  border-radius: 5px;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+}
+
+.weight-buttons {
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 14px;
+  border: none;
+  font-weight: 600;
+  background-color: #90c2d5;
+  color: white;
+}
+
+.main-tables {
+  margin-top: 25px;
+}
+
+.tables {
+  width: 100%;
+  text-align: center;
+}
+
+.tables thead tr th {
+  border: 1px solid white;
+  background-color: #90c2d5;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.tables tbody tr td {
+  border: 1px solid #ff8686;
+  font-size: 17px;
+}

@@ -1,0 +1,43 @@
+.profile-img {
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.edit-part {
+  margin-bottom: 78px;
+}
+
+.signout {
+  padding: 15px;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #0086b3;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 00;
+}
+
+input {
+  outline: 0;
+}
+
+select:focus-visible {
+  outline: 0;
+}
+
+select .options {
+  outline: 0;
+}
+
+select .options:focus-visible {
+  background-color: #0086b3;
+  color: #fff;
+}
+.signout-button{
+text-decoration: none !important;
+color: #FFFFFF;
+}

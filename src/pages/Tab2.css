@@ -1,0 +1,25 @@
+.header {
+    background: #0086b3;
+}
+
+.tab-2_main {
+    padding: 20px;
+}
+
+.img-card {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.card-img {
+    width: 200px;
+    height: 250px;
+}
+
+@media only screen and (max-width: 460px) {
+    .card-img {
+        width: 160px !important;
+        height: 210px !important;
+    }
+}
