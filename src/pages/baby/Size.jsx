@@ -6,6 +6,7 @@ import "./baby.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import Tabs from '../../components/Tabs'
+import BabyNames from '../../assets/images/baby/Apple seed.png'
 
 export const Size = () => {
     const [selectedNavItem, setSelectedNavItem] = useState("");
@@ -15,7 +16,38 @@ export const Size = () => {
     setSelectedNavItem(navItem);
   };
     const history = useHistory();
-    const navs = []
+    const images = [
+      "Chia seed",
+      "Watermelon seed",
+      "Chia seed",
+      "blueberry",
+      "raspberry",
+      "Apple seed",
+      "Watermelon seed",
+      "blueberry",
+      "raspberry",
+      "graps",
+      "strawberry",
+      "fig",
+      "Kiwi",
+      "Avocado",
+      "Mango",
+      "banana",
+      "coconut",
+      "Bunch of graps",
+      "Pineapple",
+      "Rhubarb",
+      "cantaloupe",
+      "jackfruit"
+  ];
+  
+  const items = images.map((image, index) => ({
+      id: index, // Start ids from 3 since we are skipping 1 and 2
+      image: image,
+      name: image
+  }));
+
+  const imagesPath = items.map(item => require(`../../assets/images/baby/${item.image}.png`));
 
     const renderNavLinks = () => {
         const links = [];
@@ -43,7 +75,7 @@ export const Size = () => {
             </IonHeader>
 
             <IonSegment>
-          {[1, '1-2', 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15].map(navItem => (
+          {['<1', '1-2', '3-4', 5, 6, 7, 8, 9, 10,11,12,13,14,15].map(navItem => (
             <IonSegmentButton 
               key={navItem} 
               value={navItem} 
@@ -57,24 +89,19 @@ export const Size = () => {
           ))}
         </IonSegment>
 
-        {selectedNavItem && (
-          <>
-            <img src={`url_for_${selectedNavItem}_image`} alt={`Image for ${selectedNavItem}`} />
-            <IonSelect >
-              <IonSelectOption value="Option1">Option 1</IonSelectOption>
-              <IonSelectOption value="Option2">Option 2</IonSelectOption>
-              {/* Add more options as needed */}
-            </IonSelect>
-            <IonCard>
-              <IonCardHeader>
-                <IonCardTitle>{selectedNavItem} Week</IonCardTitle>
-              </IonCardHeader>
-              <IonCardContent>
-                {/* Content for the card */}
-              </IonCardContent>
-            </IonCard>
-          </>
-        )}
+        {selectedNavItem && imagesPath[selectedNavItem] && items[selectedNavItem].name  && (<>
+          <div className="d-flex justify-content-center align-items-center">
+    <div className="img">
+      {/* Display the image using the selected item index */}
+      <img className="w-100 h-100" src={imagesPath[items[selectedNavItem].id]} alt={items[selectedNavItem].name} />
+    </div>
+  </div>
+          <div className="d-flex justify-content-center align-items-center">
+    {items[selectedNavItem].name}
+  </div>
+        </>
+  
+)}
         </IonContent>
     )
 }
