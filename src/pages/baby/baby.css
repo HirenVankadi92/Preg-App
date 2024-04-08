@@ -2,6 +2,10 @@
     background: #0086b3;
 }
 
+
+ion-note {
+  display: block;
+}
 .group {
     margin-bottom: 20px;
 }
@@ -19,6 +23,19 @@
     padding: 10px; /* Adjust as needed */
   }
   
+  @media only screen and (max-width: 768px) {
+    ion-segment {
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      white-space: nowrap !important;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer and Edge */
+      scroll-behavior: smooth; /* Optional: Add smooth scrolling */
+      scroll-snap-type: x mandatory; /* Optional: Add snap scrolling */
+      display: flex; /* Ensure flex behavior for children */
+      flex-wrap: nowrap; /* Prevent line breaks */
+    }
+  }
   
   
   .nav-link:hover {
@@ -72,4 +89,22 @@
 
 .segment-button.active {
   color: #fff; /* Change to your desired active text color */
+}
+
+.IonSegment {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Hide scrollbar for IonSegment */
+ion-segment {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+ion-segment::-webkit-scrollbar {
+  display: none; /* Webkit browsers */
 }
