@@ -7,8 +7,9 @@ import { useHistory } from "react-router";
 import DatePicker from "react-multi-date-picker";
 
 const Appointments = () => {
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date().toISOString());
   const calendarRef = useRef();
+
 
   // function update(key, value) {
   //   let date = calendarRef.current.date;

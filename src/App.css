@@ -22,3 +22,8 @@
     height: auto !important;
     width: auto;
 }
+
+ion-button::part(native){
+    background-color: #0086b3;
+
+}

@@ -25,7 +25,6 @@ const Appointment2 = (props) => {
   const [name, setname] = useState("");
   const [profession, setprofession] = useState("");
   const location = useLocation()
-
   const [date, setdate] = useState(location?.state?.date?.split("T")[0] || new Date());
   const [weight, setweight] = useState("");
   const [addNote, setaddNote] = useState("");
@@ -40,6 +39,8 @@ const Appointment2 = (props) => {
 
 
   const handleSubmit = async (e) => {
+    const useToken = localStorage.getItem("token");
+
     const dataa = {
       user_id : userId,
       name: name,
@@ -54,7 +55,10 @@ const Appointment2 = (props) => {
     try {
       const response = await axios.post(
         "https://pregnancy-tracker.vercel.app/v1/user/appointment/addAppointment/",
-        dataa
+        dataa,
+        {
+          headers: { Authorization: `Bearer ${useToken}` },
+        }
       );
       console.log(response);
       console.log("appdataa", name, profession, date, weight, addNote,user);

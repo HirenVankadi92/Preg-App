@@ -26,8 +26,6 @@ const Blogs = () => {
     fetchBlogsData();
   }, []);
   return (
-    <IonPage>
-        
       <IonContent>
       <IonHeader>
           <div className="header py-3 px-3 text-center">
@@ -36,7 +34,7 @@ const Blogs = () => {
             {/* <IonIcon icon={personCircleOutline} style={{ fontSize: "24px", color: "white" }} /> */}
           </div>
         </IonHeader>
-        <div className="container">
+        <div className="main-container">
             {data?.map((item,index)=>(
           <div className="card" key={index}>
             <div className="card__header">
@@ -58,7 +56,6 @@ const Blogs = () => {
           ))}
         </div>
       </IonContent>
-    </IonPage>
   );
 };
 

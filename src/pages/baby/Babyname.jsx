@@ -17,7 +17,7 @@ export const Babyname = () => {
   const babyNames = [
     {
       id: 1,
-      name: "Liam",
+      name: "Laksh",
       gender: "Male",
     },
     {
@@ -269,7 +269,298 @@ export const Babyname = () => {
         id: 51,
         name: "Ella2",
         gender: "Female",
-      }
+      },
+      {
+        id: 52,
+        name: "Orri",
+        gender: "Male",
+      },
+      {
+        id: 53,
+        name: "Urvashi",
+        gender: "Female",
+      },
+      {
+        id: 52,
+        name: "Aelish",
+        gender: "Male",
+      },
+      {
+        id: 53,
+        name: "Aaren",
+        gender: "Female",
+      },
+      {
+        id: 54,
+        name: "Rahul",
+        gender: "Male",
+      },
+      {
+        id: 55,
+        name: "Radhika",
+        gender: "Female",
+      },
+      {
+        id: 56,
+        name: "Nemish",
+        gender: "Male",
+      },
+      {
+        id: 57,
+        name: "Nensi",
+        gender: "Female",
+      },
+      {
+        id: 58,
+        name: "Hirem",
+        gender: "Male",
+      },
+      {
+        id: 59,
+        name: "Hasti",
+        gender: "Female",
+      },
+      {
+        id: 60,
+        name: "Pramit",
+        gender: "Male",
+      },
+      {
+        id: 61,
+        name: "Nidhi",
+        gender: "Female",
+      },
+      {
+        id: 62,
+        name: "Jenish",
+        gender: "Male",
+      },
+      {
+        id: 63,
+        name: "Hemali",
+        gender: "Female",
+      }, {
+        id: 64,
+        name: "Prince",
+        gender: "Male",
+      },
+      {
+        id: 65,
+        name: "Riddhi",
+        gender: "Female",
+      },
+      {
+        id: 66,
+        name: "Uttam",
+        gender: "Male",
+      },
+      {
+        id: 67,
+        name: "Saxi",
+        gender: "Female",
+      },
+      {
+        id: 68,
+        name: "Aelish",
+        gender: "Male",
+      },
+      {
+        id: 69,
+        name: "Dishant",
+        gender: "Female",
+      },
+      {
+        id: 70,
+        name: "Parthiv",
+        gender: "Male",
+      },
+      {
+        id: 71,
+        name: "Drasti",
+        gender: "Female",
+      },
+      {
+        id: 72,
+        name: "Sahil",
+        gender: "Male",
+      },
+      {
+        id: 73,
+        name: "Pal",
+        gender: "Female",
+      },
+      {
+        id: 74,
+        name: "Utsav",
+        gender: "Male",
+      },
+      {
+        id: 75,
+        name: "Mirali",
+        gender: "Female",
+      },
+      {
+        id: 76,
+        name: "Krenil",
+        gender: "Male",
+      },
+      {
+        id: 77,
+        name: "Gopi",
+        gender: "Female",
+      },
+       {
+        id: 78,
+        name: "Ganesh",
+        gender: "Male",
+      },
+      {
+        id: 79,
+        name: "Billi",
+        gender: "Female",
+      },
+      {
+        id: 80,
+        name: "gopal",
+        gender: "Male",
+      },
+      {
+        id: 81,
+        name: "Bansri",
+        gender: "Female",
+      },
+      {
+        id: 82,
+        name: "Hiren",
+        gender: "Male",
+      },
+      {
+        id: 83,
+        name: "Chandni",
+        gender: "Female",
+      },
+      {
+        id: 84,
+        name: "purv",
+        gender: "Male",
+      },
+      {
+        id: 85,
+        name: "Falguni",
+        gender: "Female",
+      },
+      {
+        id: 86,
+        name: "Akshar",
+        gender: "Male",
+      },
+      {
+        id: 87,
+        name: "Dhvni",
+        gender: "Female",
+      },
+      {
+        id: 88,
+        name: "Jay",
+        gender: "Male",
+      },
+      {
+        id: 89,
+        name: "Mili",
+        gender: "Female",
+      },
+      {
+        id: 90,
+        name: "panth",
+        gender: "Male",
+      },
+      {
+        id: 91,
+        name: "Diti",
+        gender: "Female",
+      },
+      {
+        id: 92,
+        name: "Manav",
+        gender: "Male",
+      },
+      {
+        id: 93,
+        name: "Niva",
+        gender: "Female",
+      },
+      {
+        id: 94,
+        name: "Happy",
+        gender: "Male",
+      },
+      {
+        id: 95,
+        name: "Hir",
+        gender: "Female",
+      }, {
+        id: 96,
+        name: "Keyur",
+        gender: "Male",
+      },
+      {
+        id: 97,
+        name: "Dhruvika",
+        gender: "Female",
+      },
+      {
+        id: 98,
+        name: "Parishrut",
+        gender: "Male",
+      },
+      {
+        id: 99,
+        name: "pruthvi",
+        gender: "Female",
+      },
+       {
+        id: 100,
+        name: "jahnav",
+        gender: "Male",
+      },
+      {
+        id: 101,
+        name: "Tulsi",
+        gender: "Female",
+      },
+      {
+        id: 102,
+        name: "Yug",
+        gender: "Male",
+      },
+      {
+        id: 103,
+        name: "Khushali",
+        gender: "Female",
+      },
+      {
+        id: 104,
+        name: "Het",
+        gender: "Male",
+      },
+      {
+        id: 105,
+        name: "Darpan",
+        gender: "Female",
+      },
+      {
+        id: 106,
+        name: "Zayn",
+        gender: "Male",
+      },
+      {
+        id: 107,
+        name: "Zoya",
+        gender: "Female",
+      },
+  
+  
+  
   ];
 
   const [selectedTab, setSelectedTab] = useState("Male");
